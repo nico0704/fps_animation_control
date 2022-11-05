@@ -13,8 +13,6 @@ var color = "#d26832";
 //var dy = Math.random() * 20 + 1;
 var dx = 25;
 var dy = 25;
-
-
 var fps = 20;
 
 slider.oninput = function () {
@@ -27,10 +25,10 @@ function animate() {
     x += dx;
     y += dy;
     if (x + r > canvas.width || x - r < 0) {
-        dx = dx * (-1);
+        dx = dx * -1;
     }
     if (y + r > canvas.height || y - r < 0) {
-        dy = dy * (-1);
+        dy = dy * -1;
     }
     //console.log(fps);
     ctx.beginPath();
@@ -38,11 +36,9 @@ function animate() {
     ctx.arc(x, y, r, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
-
     setTimeout(() => {
         requestAnimationFrame(animate);
     }, 1000 / fps);
 }
-animate();
 
 //setInterval(createCircle, 10);
