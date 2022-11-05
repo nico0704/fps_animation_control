@@ -80,6 +80,7 @@ canvas {
 
 
 .msg {
+    color: var(--font_h1);
     box-sizing: border-box;
     border-radius: 10px;
     font-weight:lighter;
