@@ -41,4 +41,6 @@ function animate() {
     }, 1000 / fps);
 }
 
+animate();
+
 //setInterval(createCircle, 10);
