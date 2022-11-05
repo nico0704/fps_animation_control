@@ -13,7 +13,7 @@ var color = "#d26832";
 //var dy = Math.random() * 20 + 1;
 var dx = 25;
 var dy = 25;
-var fps = 20;
+var fps = 30;
 
 slider.oninput = function () {
     fps = this.value;
@@ -25,10 +25,10 @@ function animate() {
     x += dx;
     y += dy;
     if (x + r > canvas.width || x - r < 0) {
-        dx = dx * -1;
+        dx *= -1;
     }
     if (y + r > canvas.height || y - r < 0) {
-        dy = dy * -1;
+        dy *= -1;
     }
     //console.log(fps);
     ctx.beginPath();
