@@ -5,15 +5,16 @@ const canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth - window.innerWidth * 0.2;
 canvas.height = window.innerHeight - window.innerHeight * 0.45;
 const ctx = canvas.getContext("2d");
+
+// Setup
 var x = 200;
 var y = 200;
 var r = 30;
 var color = "#d26832";
-//var dx = Math.random() * 20 + 1;
-//var dy = Math.random() * 20 + 1;
 var dx = 25;
 var dy = 25;
 var fps = 30;
+
 
 slider.oninput = function () {
     fps = this.value;
@@ -42,5 +43,3 @@ function animate() {
 }
 
 animate();
-
-//setInterval(createCircle, 10);
