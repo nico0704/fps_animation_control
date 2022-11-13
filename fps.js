@@ -15,7 +15,6 @@ var dx = 25;
 var dy = 25;
 var fps = 30;
 
-
 slider.oninput = function () {
     fps = this.value;
     output.innerHTML = this.value + " fps";
